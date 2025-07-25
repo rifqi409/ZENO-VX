@@ -48,5 +48,5 @@ While this project is primarily for educational purposes, contributions are welc
 License
 This project is open-source and available under the MIT License.
 Author
-Rifqi Asy-Syakur (Front Man)
+(Front Man)
  * Group: HDN Cyber Forces | ZENO Protocol
