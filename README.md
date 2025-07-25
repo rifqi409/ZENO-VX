@@ -19,9 +19,6 @@ Getting Started
 Prerequisites
  * Linux Ubuntu Operating System
  * Python 3.x installed
-Installation
- * Clone the repository:
-   git clone https://github.com/YourUsername/ZENO-VX.git
 cd ZENO-VX
 
  * Make the script executable:
@@ -36,7 +33,7 @@ The script will then prompt you to enter the target IP/Host.
 #                  ZENO VX - Multiverse Erasure            #
 #       LOIC | HOIC | XerXes | Nano | ZENO V1 - V5 Combined#
 #         IP Stealth Mode Active - Ubuntu Optimized        #
-#        Author: Rifqi Asy-Syakur aka Front Man            #
+#        Author:                aka Front Man            #
 #           Group: HDN Cyber Forces | ZENO Protocol        #
 ############################################################
 [!] ZENO-VX INITIALIZED. BEGIN ABSOLUTE PURGE...
