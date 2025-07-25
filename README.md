@@ -1,49 +1,43 @@
 ZENO VX - Multiverse Erasure
-ZENO VX is a powerful Denial of Service (DoS) tool designed for Linux Ubuntu environments. It combines multiple flooding techniques inspired by various well-known DoS tools to deliver a robust and multi-faceted attack capability. This project is intended for educational purposes and cybersecurity research only.
+⚠️ EXTREMELY DANGEROUS TOOL ⚠️
+ZENO VX is a powerful, multi-functional Denial-of-Service (DoS) tool designed to overwhelm target systems. This script combines various attack vectors inspired by notorious tools like LOIC, HOIC, XerXes, and Nano, along with previous iterations of the ZENO protocol (V1-V5).
+⛔ DISCLAIMER: READ CAREFULLY BEFORE PROCEEDING ⛔
+ * ILLEGAL USE: This tool is intended for EDUCATIONAL AND RESEARCH PURPOSES ONLY. Using ZENO VX to attack any network or system without explicit, written permission from the owner is ILLEGAL and can lead to severe legal penalties, including hefty fines and imprisonment.
+ * YOUR RESPONSIBILITY: The developer, FrontMan, and the HDN Cyber Forces / ZENO Protocol group are NOT RESPONSIBLE for any misuse or damage caused by this software. You are solely responsible for your actions when using this tool.
+ * ETHICAL HACKING ONLY: If you choose to use this, ensure it is within a controlled, legal environment (e.g., a personal test network, a capture-the-flag competition with explicit rules, or a penetration test with a signed engagement letter).
+ * ANONYMITY IS NOT GUARANTEED: While this tool attempts to use IP spoofing, total anonymity online is never guaranteed. Your activities can still be traced.
 Features
- * Multi-Method Attack: Integrates TCP, UDP, HTTP, and SYN flood capabilities for comprehensive DoS attacks.
- * IP Spoofing: Includes a built-in IP spoofer to randomize source IPs for HTTP requests, enhancing anonymity during attacks.
- * User-Agent Randomization: Utilizes a list of common user agents to make HTTP traffic appear more legitimate.
- * High Concurrency: Employs multi-threading to launch a high volume of concurrent attack requests.
- * Ubuntu Optimized: Specifically designed and tested for Linux Ubuntu environments.
- * Stealth Mode: Implements features aimed at making the attack more evasive.
-Disclaimer
-I am not responsible for any misuse or damage caused by this program. This tool is provided "as is" and without any warranty. By using this software, you agree to assume full responsibility for your actions. Unauthorized DoS attacks are illegal and can lead to severe penalties.
-How it Works
-ZENO VX operates by continuously sending a large volume of network packets or requests to a specified target IP/host. It leverages various protocols and techniques to overwhelm the target's resources, aiming to disrupt its services.
- * TCP Flood: Establishes and quickly closes numerous TCP connections, exhausting target resources.
- * UDP Flood: Sends a massive amount of UDP packets, consuming bandwidth and processing power.
- * HTTP Flood: Dispatches a high volume of HTTP GET requests, simulating legitimate web traffic to overload web servers.
- * SYN Flood: Initiates numerous partial TCP connections (SYN packets) to fill up the target's connection table.
-Getting Started
-Prerequisites
- * Linux Ubuntu Operating System
- * Python 3.x installed
-cd ZENO-VX
-
- * Make the script executable:
-   chmod +x zeno_vx.py
-
+ * Multi-Method Attack: Integrates TCP, UDP, HTTP (HOIC-style), and SYN (XerXes-style) flood capabilities.
+ * IP Stealth Mode: Attempts to spoof source IP addresses for HTTP requests.
+ * Ubuntu Optimized: Specifically designed and tested for Ubuntu Linux environments.
+ * Multi-threaded: Utilizes hundreds of threads for high-volume attack generation.
+ * Custom User-Agents: Employs a variety of common browser user-agents for HTTP floods.
+Requirements
+ * Linux Operating System (Ubuntu recommended)
+ * Python 3
+ * socket module (built-in)
+ * threading module (built-in)
+ * random module (built-in)
+ * time module (built-in)
+ * os module (built-in)
+ * platform module (built-in)
+ * sys module (built-in)
 Usage
-Run the script from your terminal:
+ * Ensure Linux: This script is designed for Linux Ubuntu only. It will exit if run on other platforms.
+ * Run the Script:
+   git clone https://github.com/rifqi409/ZENO-VX.git # Assuming a repo
+cd ZENO-VX
 python3 zeno_vx.py
 
-The script will then prompt you to enter the target IP/Host.
-############################################################
-#                  ZENO VX - Multiverse Erasure            #
-#       LOIC | HOIC | XerXes | Nano | ZENO V1 - V5 Combined#
-#         IP Stealth Mode Active - Ubuntu Optimized        #
-#        Author:                aka Front Man            #
-#           Group: HDN Cyber Forces | ZENO Protocol        #
-############################################################
-[!] ZENO-VX INITIALIZED. BEGIN ABSOLUTE PURGE...
-
-[>] Target IP/Host:
-
-Development & Contribution
-While this project is primarily for educational purposes, contributions are welcome. If you have ideas for improvements, bug fixes, or new features, feel free to open an issue or submit a pull request.
-License
-This project is open-source and available under the MIT License.
-Author
-(Front Man)
+ * Enter Target: You will be prompted to enter the target IP address or hostname. The default port is 80 (HTTP).
+ * Observe: The script will begin launching multi-threaded attacks, displaying messages for each packet/request sent.
+Attack Modes Explained
+ * TCP Flood: Establishes and sends random data over TCP connections.
+ * UDP Flood: Sends large volumes of random UDP packets to the target.
+ * HTTP Flood (HOIC Style): Floods the target with HTTP GET requests, including spoofed IP addresses and varied user-agents.
+ * SYN Flood (XerXes Style): Rapidly initiates and drops TCP connections, aiming to exhaust the target's connection table.
+Author & Group
+ * Author: FrontMan
  * Group: HDN Cyber Forces | ZENO Protocol
+🚫 STOP. THINK. ACT RESPONSIBLY. 🚫
+Remember, with great power comes great responsibility. Use this tool ethically and legally.
